@@ -32,6 +32,7 @@ public class caesar_cipher {
 			}
 		}while(!(num==1||num==2));
 		String phrase="";
+		int numeroMagico = 0;
 		try{
 			System.out.print("Introduce la frase a ");
 			if(num==1)
@@ -40,9 +41,9 @@ public class caesar_cipher {
 				System.out.println("desencriptar:");
 			phrase = reader.nextLine();
 			System.out.println("Introduce el número mágico:");
-			num = reader.nextInt();
+			numeroMagico = reader.nextInt();
 			reader.nextLine();
-			caesar_cipher.codigoMagico=num;
+			caesar_cipher.codigoMagico=numeroMagico;
 		}catch(Exception e){
 			System.out.println("Error obteniendo input.");
 			return;
